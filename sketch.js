@@ -1,13 +1,9 @@
 window.onresize = () => {
-	windowManager = new WindowManager();
-	resizeCanvas(windowManager.getCanvasWidth(), windowManager.getCanvasHeight());
-	windowManager.setCanvasPadding();
+	resizeCanvas(window.innerWidth, window.innerHeight);
 }
 
 function setup() {
-	let windowManager = new WindowManager();
-	createCanvas(windowManager.getCanvasWidth(), windowManager.getCanvasHeight());
-	windowManager.setCanvasPadding();
+	createCanvas(window.innerWidth, window.innerHeight);
 }
 
 function draw() {
