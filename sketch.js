@@ -3,6 +3,7 @@ window.onresize = () => {
 }
 
 let data;
+let networkViewer;
 
 async function getData() {
 	let response = await fetch('./assets/mapNetworkData.json');
@@ -11,13 +12,11 @@ async function getData() {
 
 async function setup() {
 	data = await getData();
-	console.log(data);
 	createCanvas(window.innerWidth, window.innerHeight);
+	networkViewer = new NetworkViewer(data);
 }
 
 function draw() {
-	background(255, 0, 90);
-	stroke(0, 0, 255);
-	fill(100, 0, 255);
-	ellipse(mouseX, mouseY, 90);
+	background(34, 181, 152);
+	networkViewer.draw();
 }
