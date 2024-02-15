@@ -2,7 +2,16 @@ window.onresize = () => {
 	resizeCanvas(window.innerWidth, window.innerHeight);
 }
 
-function setup() {
+let data;
+
+async function getData() {
+	let response = await fetch('./assets/mapNetworkData.json');
+	return await response.json();
+}
+
+async function setup() {
+	data = await getData();
+	console.log(data);
 	createCanvas(window.innerWidth, window.innerHeight);
 }
 
