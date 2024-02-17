@@ -13,13 +13,14 @@ class NetworkViewer {
 		}
 
 		// draw edges
-		let edgeSet = new Set();
+		let drawnEdges = new Set();
 		for (let nodeId in this.networkData) {
 			let node = this.networkData[nodeId];
 			for (let neighborId of node.connections) {
-				if (!edgeSet.has(nodeId+"-"+neighborId) && !edgeSet.has(nodeId+"-"+neighborId)) {
-					this.drawEdge(node, this.networkData[neighborId]);
-					edgeSet.add(nodeId+"-"+neighborId);
+				if (!drawnEdges.has(nodeId+"-"+neighborId) && !drawnEdges.has(neighborId+"-"+nodeId)) {
+					if (this.drawEdge(node, this.networkData[neighborId])) {
+						drawnEdges.add(nodeId+"-"+neighborId);
+					}
 				}
 			}
 		}
@@ -82,11 +83,30 @@ class NetworkViewer {
 	}
 
 	drawEdge(node, neighbor) {
+		let nodeX = node.location.x;
+		let nodeY = node.location.y;
+		let neighborX = neighbor.location.x;
+		let neighborY = neighbor.location.y;
+		
+		let edgeIsDrawn = true;
+
 		push();
-		stroke(40);
+		stroke(240);
 		strokeWeight(2);
-		line(width*node.location.x, height*node.location.y, width*neighbor.location.x, height*neighbor.location.y);
+
+		if (node.horizontalWrapNeighborsRight.includes(neighbor.name)) {
+			neighborX += 1;
+			edgeIsDrawn = false;
+		}
+		if (node.horizontalWrapNeighborsLeft.includes(neighbor.name)) {
+			neighborX -= 1;
+			edgeIsDrawn = false;
+		}
+
+		line(width*nodeX, height*nodeY, width*neighborX, height*neighborY);
 		pop();
+
+		return edgeIsDrawn;
 	}
 
 	drawNode(node) {
