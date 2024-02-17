@@ -26,6 +26,12 @@ class NetworkViewer {
 		}
 	}
 
+	mousePressed(mouseButton) {
+		if (mouseButton == LEFT) {
+			
+		}
+	}
+
 	drawEdge(node, neighbor) {
 		push();
 		stroke(40);

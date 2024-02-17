@@ -14,6 +14,13 @@ function setup() {
 	networkViewer = new NetworkViewer(networkData);
 }
 
+function mousePressed() {
+	networkViewer.mousePressed(mouseButton);
+
+	// prevent default
+	return false;
+}
+
 function draw() {
 	background(34, 181, 152);
 	networkViewer.draw();
