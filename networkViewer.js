@@ -31,10 +31,12 @@ class NetworkViewer {
 	}
 
 	mousePressed(mouseButton) {
+		if (mouseButton == CENTER) {
+			this.normalizeNodeLocations();
+		}
 		if (mouseButton == RIGHT) {
 			console.log(this.networkData);
 		}
-		if (mouseButton != LEFT) return;
 
 		if (this.activeNodeId) {
 			this.activeNodeId = undefined;
@@ -50,6 +52,30 @@ class NetworkViewer {
 				this.activeNodeId = nodeId;
 				return;
 			}
+		}
+	}
+
+	normalizeNodeLocations() {
+		let minX = 1;
+		let maxX = 0;
+		let minY = 1;
+		let maxY = 0;
+		for (let nodeId in this.networkData) {
+			let node = this.networkData[nodeId];
+			let nodeX = node.location.x;
+			let nodeY = node.location.y;
+			if (nodeX < minX) minX = nodeX;
+			if (nodeX > maxX) maxX = nodeX;
+			if (nodeY < minY) minY = nodeY;
+			if (nodeY > maxY) maxY = nodeY;
+		}
+		
+		for (let nodeId in this.networkData) {
+			let node =  this.networkData[nodeId];
+			let nodeX = node.location.x;
+			let nodeY = node.location.y;
+			node.location.x = map(nodeX, minX, maxX, 0.1, 0.9);
+			node.location.y = map(nodeY, minY, maxY, 0.05, 0.95);
 		}
 	}
 
