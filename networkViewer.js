@@ -33,7 +33,7 @@ class NetworkViewer {
 		for (let nodeId in this.networkData) {
 			let node = this.networkData[nodeId];
 			let nodeX = node.location.x*width;
-			let nodeY = node.location.x*width;
+			let nodeY = node.location.y*height;
 			let distance = dist(nodeX, nodeY, mouseX, mouseY);
 			if (distance < 25) {
 				this.activeNodeId = nodeId;
