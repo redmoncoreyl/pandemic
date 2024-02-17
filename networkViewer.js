@@ -37,6 +37,11 @@ class NetworkViewer {
 	mousePressed(mouseButton) {
 		if (mouseButton != LEFT) return;
 
+		if (this.activeNodeId) {
+			this.activeNodeId = undefined;
+			return;
+		}
+
 		for (let nodeId in this.networkData) {
 			let node = this.networkData[nodeId];
 			let nodeX = node.location.x*width;
