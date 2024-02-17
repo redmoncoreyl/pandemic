@@ -9,6 +9,13 @@ class NetworkViewer {
 	}
 
 	draw() {
+		// move activeNode
+		if (this.activeNodeId) {
+			let activeNode = this.networkData[this.activeNodeId]
+			activeNode.location.x = mouseX/width;
+			activeNode.location.y = mouseY/height;
+		}
+
 		// draw edges
 		let edgeSet = new Set();
 		for (let nodeId in this.networkData) {
