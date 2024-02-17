@@ -35,6 +35,9 @@ class NetworkViewer {
 	}
 
 	mousePressed(mouseButton) {
+		if (mouseButton == RIGHT) {
+			console.log(this.networkData);
+		}
 		if (mouseButton != LEFT) return;
 
 		if (this.activeNodeId) {
