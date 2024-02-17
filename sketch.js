@@ -2,18 +2,16 @@ window.onresize = () => {
 	resizeCanvas(window.innerWidth, window.innerHeight);
 }
 
-let data;
+let networkData;
 let networkViewer;
 
-async function getData() {
-	let response = await fetch('./assets/mapNetworkData.json');
-	return await response.json();
+function preload() {
+	networkData = loadJSON('assets/mapNetworkData.json');
 }
 
-async function setup() {
-	data = await getData();
+function setup() {
 	createCanvas(window.innerWidth, window.innerHeight);
-	networkViewer = new NetworkViewer(data);
+	networkViewer = new NetworkViewer(networkData);
 }
 
 function draw() {
