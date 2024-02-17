@@ -116,7 +116,7 @@ class NetworkViewer {
 		ellipse(width*node.location.x, height*node.location.y, 50);
 		textSize(14);
 		fill(0);
-		if (node.color == "black") fill(255);
+		if (node.color == "black" || node.color == "purple") fill(255);
 		textAlign(CENTER, CENTER);
 		text(node.name, width*node.location.x, height*node.location.y);
 		pop();
