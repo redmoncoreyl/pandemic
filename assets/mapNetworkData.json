@@ -12,10 +12,11 @@
             "x": 0.024745269286754003,
             "y": 0.16606060606060605
         },
-        "horizontalWrapNeighbors": [
+        "horizontalWrapNeighborsLeft": [
             "R4",
             "R8"
-        ]
+        ],
+		"horizontalWrapNeighborsRight": []
     },
     "P2": {
         "name": "P2",
@@ -31,7 +32,8 @@
             "x": 0.08296943231441048,
             "y": 0.23636363636363636
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "P3": {
         "name": "P3",
@@ -45,7 +47,8 @@
             "x": 0.11935953420669577,
             "y": 0.09333333333333334
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "P4": {
         "name": "P4",
@@ -59,7 +62,8 @@
             "x": 0.16011644832605532,
             "y": 0.2412121212121212
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "P5": {
         "name": "P5",
@@ -74,7 +78,8 @@
             "x": 0.2700145560407569,
             "y": 0.06666666666666667
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "P6": {
         "name": "P6",
@@ -89,7 +94,8 @@
             "x": 0.21615720524017468,
             "y": 0.20242424242424242
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "P7": {
         "name": "P7",
@@ -104,7 +110,8 @@
             "x": 0.3537117903930131,
             "y": 0.07878787878787878
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "P8": {
         "name": "P8",
@@ -120,7 +127,8 @@
             "x": 0.2802037845705968,
             "y": 0.25696969696969696
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "P9": {
         "name": "P9",
@@ -135,7 +143,8 @@
             "x": 0.46142649199417757,
             "y": 0.052121212121212124
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "P10": {
         "name": "P10",
@@ -151,7 +160,8 @@
             "x": 0.36171761280931586,
             "y": 0.2096969696969697
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "P11": {
         "name": "P11",
@@ -165,7 +175,8 @@
             "x": 0.50509461426492,
             "y": 0.19515151515151516
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "P12": {
         "name": "P12",
@@ -179,7 +190,8 @@
             "x": 0.42503639010189226,
             "y": 0.2593939393939394
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "Y1": {
         "name": "Y1",
@@ -195,9 +207,10 @@
             "x": 0.026200873362445413,
             "y": 0.3527272727272727
         },
-        "horizontalWrapNeighbors": [
+        "horizontalWrapNeighborsLeft": [
             "R11"
-        ]
+        ],
+		"horizontalWrapNeighborsRight": []
     },
     "Y2": {
         "name": "Y2",
@@ -213,7 +226,8 @@
             "x": 0.10844250363901019,
             "y": 0.3393939393939394
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "Y3": {
         "name": "Y3",
@@ -228,7 +242,8 @@
             "x": 0.040756914119359534,
             "y": 0.503030303030303
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "Y4": {
         "name": "Y4",
@@ -243,7 +258,8 @@
             "x": 0.19359534206695778,
             "y": 0.3333333333333333
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "Y5": {
         "name": "Y5",
@@ -259,7 +275,8 @@
             "x": 0.12736535662299855,
             "y": 0.5115151515151515
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "Y6": {
         "name": "Y6",
@@ -272,7 +289,8 @@
             "x": 0.06040756914119359,
             "y": 0.6666666666666666
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "Y7": {
         "name": "Y7",
@@ -287,7 +305,8 @@
             "x": 0.22561863173216884,
             "y": 0.4496969696969697
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "Y8": {
         "name": "Y8",
@@ -302,7 +321,8 @@
             "x": 0.14992721979621543,
             "y": 0.6533333333333333
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "Y9": {
         "name": "Y9",
@@ -316,7 +336,8 @@
             "x": 0.31149927219796214,
             "y": 0.5006060606060606
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "Y10": {
         "name": "Y10",
@@ -330,7 +351,8 @@
             "x": 0.23435225618631733,
             "y": 0.7612121212121212
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "Y11": {
         "name": "Y11",
@@ -345,7 +367,8 @@
             "x": 0.314410480349345,
             "y": 0.6896969696969697
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "Y12": {
         "name": "Y12",
@@ -359,7 +382,8 @@
             "x": 0.23944687045123728,
             "y": 0.5733333333333334
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "B1": {
         "name": "B1",
@@ -374,7 +398,8 @@
             "x": 0.326783114992722,
             "y": 0.36484848484848487
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "B2": {
         "name": "B2",
@@ -391,7 +416,8 @@
             "x": 0.43377001455604075,
             "y": 0.35878787878787877
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "B3": {
         "name": "B3",
@@ -407,7 +433,8 @@
             "x": 0.388646288209607,
             "y": 0.5187878787878788
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "B4": {
         "name": "B4",
@@ -421,7 +448,8 @@
             "x": 0.524745269286754,
             "y": 0.30666666666666664
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "B5": {
         "name": "B5",
@@ -436,7 +464,8 @@
             "x": 0.4672489082969432,
             "y": 0.4618181818181818
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "B6": {
         "name": "B6",
@@ -450,7 +479,8 @@
             "x": 0.40611353711790393,
             "y": 0.6678787878787878
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "B7": {
         "name": "B7",
@@ -465,7 +495,8 @@
             "x": 0.5553129548762736,
             "y": 0.43272727272727274
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "B8": {
         "name": "B8",
@@ -480,7 +511,8 @@
             "x": 0.4861717612809316,
             "y": 0.5696969696969697
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "B9": {
         "name": "B9",
@@ -496,7 +528,8 @@
             "x": 0.5560407569141194,
             "y": 0.616969696969697
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "B10": {
         "name": "B10",
@@ -510,7 +543,8 @@
             "x": 0.4657933042212518,
             "y": 0.743030303030303
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "B11": {
         "name": "B11",
@@ -525,7 +559,8 @@
             "x": 0.6084425036390102,
             "y": 0.5151515151515151
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "B12": {
         "name": "B12",
@@ -540,7 +575,8 @@
             "x": 0.5975254730713246,
             "y": 0.7393939393939394
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "R1": {
         "name": "R1",
@@ -553,7 +589,8 @@
             "x": 0.5625909752547307,
             "y": 0.16
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "R2": {
         "name": "R2",
@@ -567,7 +604,8 @@
             "x": 0.653566229985444,
             "y": 0.11878787878787879
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "R3": {
         "name": "R3",
@@ -583,7 +621,8 @@
             "x": 0.6026200873362445,
             "y": 0.33575757575757575
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "R4": {
         "name": "R4",
@@ -598,7 +637,8 @@
             "x": 0.7147016011644832,
             "y": 0.1903030303030303
         },
-        "horizontalWrapNeighbors": [
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": [
             "P1"
         ]
     },
@@ -615,7 +655,8 @@
             "x": 0.7219796215429404,
             "y": 0.35878787878787877
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "R6": {
         "name": "R6",
@@ -632,7 +673,8 @@
             "x": 0.6695778748180495,
             "y": 0.4448484848484848
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "R7": {
         "name": "R7",
@@ -645,7 +687,8 @@
             "x": 0.759825327510917,
             "y": 0.27515151515151515
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "R8": {
         "name": "R8",
@@ -661,7 +704,8 @@
             "x": 0.7802037845705968,
             "y": 0.4387878787878788
         },
-        "horizontalWrapNeighbors": [
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": [
             "P1"
         ]
     },
@@ -678,7 +722,8 @@
             "x": 0.7328966521106259,
             "y": 0.5515151515151515
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "R10": {
         "name": "R10",
@@ -693,7 +738,8 @@
             "x": 0.6615720524017468,
             "y": 0.6278787878787879
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     },
     "R11": {
         "name": "R11",
@@ -707,7 +753,8 @@
             "x": 0.7692867540029112,
             "y": 0.6775757575757576
         },
-        "horizontalWrapNeighbors": [
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": [
             "Y1"
         ]
     },
@@ -724,6 +771,7 @@
             "x": 0.6870451237263464,
             "y": 0.76
         },
-        "horizontalWrapNeighbors": []
+        "horizontalWrapNeighborsLeft": [],
+		"horizontalWrapNeighborsRight": []
     }
 }
