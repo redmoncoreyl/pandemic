@@ -92,7 +92,7 @@ class NetworkViewer {
 
 		push();
 		stroke(240);
-		strokeWeight(2);
+		strokeWeight(3);
 
 		if (node.horizontalWrapNeighborsRight.includes(neighbor.name)) {
 			neighborX += 1;
