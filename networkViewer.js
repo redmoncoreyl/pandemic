@@ -45,7 +45,5 @@ class NetworkViewer {
 		textAlign(CENTER, CENTER);
 		text(node.name, width*node.location.x, height*node.location.y);
 		pop();
-		node.location.x += (Math.random()-0.5)/200;
-		node.location.y += (Math.random()-0.5)/200;
 	}
 }
