@@ -1,10 +1,6 @@
 class NetworkViewer {
 	constructor(networkData) {
-		this.networkData = networkData.network;
-		for (let node of Object.values(this.networkData)) {
-			node.location.x = Math.random()*0.8 + 0.1;
-			node.location.y = Math.random()*0.8 + 0.1;
-		}
+		this.networkData = networkData;
 		this.activeNodeId = undefined;
 	}
 
