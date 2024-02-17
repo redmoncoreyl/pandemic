@@ -5,7 +5,7 @@ class NetworkViewer {
 			node.location.x = Math.random()*0.8 + 0.1;
 			node.location.y = Math.random()*0.8 + 0.1;
 		}
-		this.activeNode = undefined;
+		this.activeNodeId = undefined;
 	}
 
 	draw() {
@@ -36,7 +36,7 @@ class NetworkViewer {
 			let nodeY = node.location.x*width;
 			let distance = dist(nodeX, nodeY, mouseX, mouseY);
 			if (distance < 25) {
-				this.activeNode = nodeId;
+				this.activeNodeId = nodeId;
 				return;
 			}
 		}
