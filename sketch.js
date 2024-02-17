@@ -22,6 +22,6 @@ function mousePressed() {
 }
 
 function draw() {
-	background(34, 181, 152);
+	background(20, 133, 131);
 	networkViewer.draw();
 }
