@@ -33,9 +33,11 @@ class NetworkViewer {
 	mousePressed(mouseButton) {
 		if (mouseButton == CENTER) {
 			this.normalizeNodeLocations();
+			return;
 		}
 		if (mouseButton == RIGHT) {
 			console.log(this.networkData);
+			return;
 		}
 
 		if (this.activeNodeId) {
