@@ -5,13 +5,6 @@ class NetworkViewer {
 	}
 
 	draw() {
-		// move activeNode
-		if (this.activeNodeId) {
-			let activeNode = this.networkData[this.activeNodeId]
-			activeNode.position.x = mouseX/width;
-			activeNode.position.y = mouseY/height;
-		}
-
 		// draw edges
 		let drawnEdges = new Set();
 		for (let nodeId in this.networkData) {
@@ -28,57 +21,6 @@ class NetworkViewer {
 		// draw nodes
 		for (let node of Object.values(this.networkData)) {
 			this.drawNode(node);
-		}
-	}
-
-	mousePressed(mouseButton) {
-		if (mouseButton == CENTER) {
-			this.normalizeNodeLocations();
-			return;
-		}
-		if (mouseButton == RIGHT) {
-			console.log(this.networkData);
-			return;
-		}
-
-		if (this.activeNodeId) {
-			this.activeNodeId = undefined;
-			return;
-		}
-
-		for (let nodeId in this.networkData) {
-			let node = this.networkData[nodeId];
-			let nodeX = node.position.x*width;
-			let nodeY = node.position.y*height;
-			let distance = dist(nodeX, nodeY, mouseX, mouseY);
-			if (distance < 25) {
-				this.activeNodeId = nodeId;
-				return;
-			}
-		}
-	}
-
-	normalizeNodeLocations() {
-		let minX = 1;
-		let maxX = 0;
-		let minY = 1;
-		let maxY = 0;
-		for (let nodeId in this.networkData) {
-			let node = this.networkData[nodeId];
-			let nodeX = node.position.x;
-			let nodeY = node.position.y;
-			if (nodeX < minX) minX = nodeX;
-			if (nodeX > maxX) maxX = nodeX;
-			if (nodeY < minY) minY = nodeY;
-			if (nodeY > maxY) maxY = nodeY;
-		}
-		
-		for (let nodeId in this.networkData) {
-			let node =  this.networkData[nodeId];
-			let nodeX = node.position.x;
-			let nodeY = node.position.y;
-			node.position.x = map(nodeX, minX, maxX, 0.1, 0.9);
-			node.position.y = map(nodeY, minY, maxY, 0.05, 0.95);
 		}
 	}
 
