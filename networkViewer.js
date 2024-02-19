@@ -1,7 +1,6 @@
 class NetworkViewer {
 	constructor(networkData) {
 		this.networkData = networkData;
-		this.activeNodeId = undefined;
 	}
 
 	draw() {
