@@ -9,16 +9,14 @@ class NetworkViewer {
 
 	draw() {
 		// draw edges
-		let drawnEdges = new Set();
+		let visitedNodeIds = new Set();
 		for (let nodeId in this.networkData) {
 			let node = this.networkData[nodeId];
 			for (let neighborId of node.connections) {
-				if (!drawnEdges.has(nodeId+"-"+neighborId) && !drawnEdges.has(neighborId+"-"+nodeId)) {
-					if (this.drawEdge(node, this.networkData[neighborId])) {
-						drawnEdges.add(nodeId+"-"+neighborId);
-					}
-				}
+				if (visitedNodeIds.has(neighborId)) continue;
+				this.drawEdge(node, this.networkData[neighborId]);
 			}
+			visitedNodeIds.add(nodeId);
 		}
 
 		// draw nodes
