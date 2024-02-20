@@ -7,6 +7,13 @@ class NetworkViewer {
 		this.height = h || height;
 	}
 
+	resize(x, y, w, h) {
+		this.minX = x || 0;
+		this.width = w || width;
+		this.minY = y || 0;
+		this.height = h || height;
+	}
+
 	draw() {
 		// draw edges
 		let visitedNodeIds = new Set();

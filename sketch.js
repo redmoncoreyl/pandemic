@@ -1,5 +1,6 @@
 window.onresize = () => {
 	resizeCanvas(window.innerWidth, window.innerHeight);
+	networkViewer.resize(10, 10, width-20, height-20);
 }
 
 document.addEventListener('contextmenu', event => event.preventDefault());
