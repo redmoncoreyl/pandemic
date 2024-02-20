@@ -53,6 +53,36 @@ class NetworkViewer {
 	}
 
 	drawWrappedEdge(node, neighbor) {
+		// determine left and right node
+		let leftNode = node;
+		let rightNode = neighbor;
+		if (node.position.x > neighbor.position.x) {
+			[leftNode, rightNode] = [rightNode, leftNode];
+		}
+
+		// get left edge position
+		let leftPosition = leftNode.position;
+		let leftPhantomPosition = {x: rightNode.position.x - 1, y: rightNode.position.y};
+		let leftEdgeY = map(0, leftPhantomPosition.x, leftPosition.x, leftPhantomPosition.y, leftPosition.y);
+		let leftEdgePosition = {x: 0, y: leftEdgeY};
+		let leftRenderedPosition = this.normalizedToRenderedPosition(leftPosition);
+		let leftEdgeRenderedPosition = this.normalizedToRenderedPosition(leftEdgePosition);
+
+		// get right edge position
+		let rightPosition = rightNode.position;
+		let rightPhantomPosition = {x: leftNode.position.x + 1, y: leftNode.position.y};
+		let rightEdgeY = map(1, rightPhantomPosition.x, rightPosition.x, rightPhantomPosition.y, rightPosition.y);
+		let rightEdgePosition = {x: 1, y: rightEdgeY};
+		let rightRenderedPosition = this.normalizedToRenderedPosition(rightPosition);
+		let rightEdgeRenderedPosition = this.normalizedToRenderedPosition(rightEdgePosition);
+
+		// draw edges
+		push();
+		stroke(240);
+		strokeWeight(3);
+		line(leftRenderedPosition.x, leftRenderedPosition.y, leftEdgeRenderedPosition.x, leftEdgeRenderedPosition.y);
+		line(rightRenderedPosition.x, rightRenderedPosition.y, rightEdgeRenderedPosition.x, rightEdgeRenderedPosition.y);
+		pop();
 
 	}
 
