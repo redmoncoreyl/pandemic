@@ -23,6 +23,9 @@ class NetworkViewer {
 		for (let node of Object.values(this.networkData)) {
 			this.drawNode(node);
 		}
+
+		// draw border
+		this.drawBorder();
 	}
 
 	drawEdge(node, neighbor) {
@@ -48,6 +51,15 @@ class NetworkViewer {
 
 	drawWrappedEdge(node, neighbor) {
 
+	}
+
+	drawBorder() {
+		push();
+		noFill();
+		strokeWeight(5);
+		stroke(255);
+		rect(this.minX, this.minY, this.width, this.height);
+		pop();
 	}
 
 	drawNode(node) {
