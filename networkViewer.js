@@ -1,6 +1,10 @@
 class NetworkViewer {
-	constructor(networkData) {
+	constructor(networkData, x, y, w, h) {
 		this.networkData = networkData;
+		this.minX = x || 0;
+		this.width = w || width;
+		this.minY = y || 0;
+		this.height = h || height;
 	}
 
 	draw() {
