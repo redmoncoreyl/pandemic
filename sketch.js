@@ -13,7 +13,7 @@ function preload() {
 
 function setup() {
 	createCanvas(window.innerWidth, window.innerHeight);
-	networkViewer = new NetworkViewer(networkData);
+	networkViewer = new NetworkViewer(networkData, 10, 10, width-20, height-20);
 }
 
 function draw() {
