@@ -26,6 +26,12 @@ class NetworkViewer {
 	}
 
 	drawEdge(node, neighbor) {
+		if (node.horizontalWrapNeighborsLeft.includes(neighbor.name) ||
+				node.horizontalWrapNeighborsRight.includes(neighbor.name)) {
+			this.drawWrappedEdge(node, neighbor);
+			return;
+		}
+
 		let nodeX = node.position.x;
 		let nodeY = node.position.y;
 		let neighborX = neighbor.position.x;
@@ -36,20 +42,12 @@ class NetworkViewer {
 		push();
 		stroke(240);
 		strokeWeight(3);
-
-		if (node.horizontalWrapNeighborsRight.includes(neighbor.name)) {
-			neighborX += 1;
-			edgeIsDrawn = false;
-		}
-		if (node.horizontalWrapNeighborsLeft.includes(neighbor.name)) {
-			neighborX -= 1;
-			edgeIsDrawn = false;
-		}
-
 		line(width*nodeX, height*nodeY, width*neighborX, height*neighborY);
 		pop();
+	}
 
-		return edgeIsDrawn;
+	drawWrappedEdge(node, neighbor) {
+
 	}
 
 	drawNode(node) {
