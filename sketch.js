@@ -1,6 +1,6 @@
 window.onresize = () => {
 	resizeCanvas(window.innerWidth, window.innerHeight);
-	networkViewer.resize(10, 10, width-20, height-20);
+	networkViewer.resize(10, 10, 1300, 700);
 }
 
 document.addEventListener('contextmenu', event => event.preventDefault());
@@ -14,7 +14,7 @@ function preload() {
 
 function setup() {
 	createCanvas(window.innerWidth, window.innerHeight);
-	networkViewer = new NetworkViewer(networkData, 10, 10, width-20, height-20);
+	networkViewer = new NetworkViewer(networkData, 10, 10, 1300, 700);
 }
 
 function draw() {

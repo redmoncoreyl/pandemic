@@ -42,17 +42,13 @@ class NetworkViewer {
 			return;
 		}
 
-		let nodeX = node.position.x;
-		let nodeY = node.position.y;
-		let neighborX = neighbor.position.x;
-		let neighborY = neighbor.position.y;
-		
-		let edgeIsDrawn = true;
+		let nodeRenderedPosition = this.normalizedToRenderedPosition(node.position);
+		let neighborRenderedPosition = this.normalizedToRenderedPosition(neighbor.position);
 
 		push();
 		stroke(240);
 		strokeWeight(3);
-		line(width*nodeX, height*nodeY, width*neighborX, height*neighborY);
+		line(nodeRenderedPosition.x, nodeRenderedPosition.y, neighborRenderedPosition.x, neighborRenderedPosition.y);
 		pop();
 	}
 
@@ -73,12 +69,20 @@ class NetworkViewer {
 		push();
 		noStroke();
 		fill(node.color);
-		ellipse(width*node.position.x, height*node.position.y, 50);
+		let renderedPosition = this.normalizedToRenderedPosition(node.position);
+		ellipse(renderedPosition.x, renderedPosition.y, 50);
 		textSize(14);
 		fill(0);
 		if (node.color == "black" || node.color == "purple") fill(255);
 		textAlign(CENTER, CENTER);
-		text(node.name, width*node.position.x, height*node.position.y);
+		text(node.name, renderedPosition.x, renderedPosition.y);
 		pop();
+	}
+
+	normalizedToRenderedPosition(position) {
+		let _position = {};
+		_position.x = this.minX + position.x * this.width;
+		_position.y = this.minY + position.y * this.height;
+		return _position;
 	}
 }
